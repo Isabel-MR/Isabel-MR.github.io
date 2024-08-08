@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body {
+    background-color: white;
+    font-family: 'Imprima', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+header {
+    background-color: #044655;
+    margin: 0;
+    height: 70px;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+#logo_header {
+    height: 50px;
+    width: 50px;
+}
+
+section {
+    display: inline-flex;
+    height: 50px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+#section-1 {
+    margin-left: 100px;
+}
+
+#section-2 {
+    margin-left: 30px;
+    color: #044655;
+}
+
+.line {
+    width: 1px; 
+    background-color: black; 
+    position: relative;
+    height: 30px; 
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-left: 500px;
+}
+
+#logo_nav { 
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: end;   
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 600px; 
+    background-image: url('animais.jpg'); /* Caminho da imagem do banner */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área do banner */
+    background-position: center; /* Centraliza a imagem no banner */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.campanha {
+    text-align: left;
+    background-color: #f8d7da;
+    padding: 20px;
+    margin-top: -10px;
+}
+
+.campanha h1 {
+    margin: 0;
+    color: #d63384;
+}
+
+.campanha p {
+    margin: 5px 0 0 0;
+    color: #000;
+}
+
+.conteudo {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #000;
+}
+
+hr {
+    height: 3px;
+    width: 40%;
+    background: rgb(0, 0, 0);
+    margin: 10px auto;
+}
+
+a{
+    color: #044655;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+.container-animais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px; 
+    padding: 20px; /* Espaçamento interno */
+}
+
+#Dogs {
+    padding-bottom: 20px;
+    height: 170px;
+    width: 150px;
+    margin-left: 600px;
+    margin-top: 50px;
+}
+#Cats {
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+}
+
+.pilares {
+    display: inline-flex;
+    justify-content: center;
+    height: 300px;
+    margin-bottom: 20px;
+    background-color: #F3F0F0;
+    margin-bottom: -10px;
+}
+
+h2{
+    font-family: 'Lobster Two', sans-serif;
+    color: #4E16EF;
+}
+.container-pilares {
+    display: flex;
+    gap: 80px;
+}
+
+.pilar {
+    text-align: center;
+}
+
+.pilar img {
+    width: 30px;
+    height: 30px;
+    margin-top: 80px;
+}
+
+#racao{
+    height: 30px;
+    width: 33px;
+}
+.Ongs {
+    display: flex;
+    background-color: #FF8200;
+    text-align: center;
+    height: 300px;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-bottom: -100px
+}
+
+#text-ong {
+    font-family: 'Imprima', sans-serif;
+    color: white;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #044655;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    border: none;
+    margin-top: 100px;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-section.logo img {
+    width: 100px;
+}
+
+.footer-section p {
+    margin: 0;
+    font-weight: bold;
+    color: #e2c19f;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-section ul.social-media li {
+    margin: 0 10px;
+}
+
+.footer-section ul.social-media li img {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+@media (max-width: 1200px) {
+    
+    .Dogs, .Cats {
+        margin: 10px auto;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        height: 50px;
+    }
+
+    #logo_header {
+        height: 40px;
+        width: 40px;
+    }
+
+    section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #section-1, #section-2 {
+        margin: 10px 0;
+    }
+
+    .section-container {
+        margin-left: 0;
+    }
+
+    .banner {
+        height: 400px;
+    }
+
+    .container-animais {
+        padding: 10px;
+    }
+
+    .Dogs, .Cats {
+        height: auto;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .pilares {
+        flex-direction: column;
+    }
+
+    .container-pilares {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .pilar img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-section {
+        max-width: 100%;
+    }
+
+    .footer-section ul.social-media li {
+        margin: 0 5px;
+    }
+}

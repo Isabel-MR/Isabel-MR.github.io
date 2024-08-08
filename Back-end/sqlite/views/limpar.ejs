@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Excluir </title>
+    <style>
+      body {
+        background-color: #065e72;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+  
+    h1{
+      font-size: 3rem;
+    color: white;
+    margin-bottom: 3px;
+    text-align: center;
+        color: white;
+    }
+     
+    </style>
+   
+  </head>
+  <body>
+    <h1>Limpar contatos</h1>
+    <p> Tem certeza que deseja excluir todos os contatos?</p>
+    <form method="POST" action="/limpar">
+        <button type="submit">Sim</button>
+      </form>
+      <a href="/"><button>
+        Não
+      </button></a>
+  </body>
+</html>

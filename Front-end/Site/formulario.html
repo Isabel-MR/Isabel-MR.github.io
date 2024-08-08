@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../PetDot/favicon/favicon-32x32.png">
+
+    <title>Formulário - PetDot</title>
+</head>
+<body>
+    <p><a href="../Site/index.html"> clique aqui para voltar a tela inicial!</a> </p>
+
+    <h1> Formulário  </h1>
+    <hr>
+    <fieldset>
+        <legend> Dados Pessoais </legend>
+        <form action="teste.html" method="get" autocomplete="on">
+            <p>
+                <label for="inome"> Nome completo </label>
+                <input type="text" placeholder="Nome e Sobrenome" name="nome" id="inome" autocomplete="name" required >
+            </p>
+            <p>
+                <label for="iemail"> Email </label>
+                <input type="email" name="email" id="iemail"
+                placeholder="Digite seu email"  autocomplete="email">
+            </p>
+            <p>
+                <label for="icpf">CPF</label>
+                <input type="text" name="cpf" id="icpf" minlength="11" maxlength="11" pattern="\d{11}" placeholder="Digite seu cpf">
+            </p>
+            
+            <p>
+                <label for="itelefone"> Telefone </label>
+                <input type="tel" name="telefone" id="itelefone"  pattern="^\(\d{2}\)\d{4,5}\d{4}$" autocomplete="tel"  placeholder="(xx)xxxx-xxxx">
+            </p>  
+            <p>
+                <label for="idata"> Data de Nascimento </label>
+                <input type="date" name="data" id="idata" required>
+            </p>       
+            <p> 
+                <label for="irelato"> Motivo de querer adotar</label>
+            </p>
+            <p>
+                <textarea name="relato" id="irelato" cols="60" rows="10"></textarea>
+            </p>
+    </fieldset>
+   
+    <div class="butao-container">
+    <input type="reset" value="Limpar" id="botaoLimp">
+    <input type="submit" value="Entrar" id="botaoEnv">
+    </div>
+    </form>
+    <footer>
+        <div class="footer-section logo">
+            <img src="logo.png" alt="Logo PetDot">
+        </div>
+        <div class="footer-section">
+            <p>Nossas redes sociais</p>
+            <ul class="social-media">
+                <li><img src="Instagram.png" alt="Instagram"></li>
+                <li><img src="facebook_svgrepo.com.png" alt="Facebook"></li>
+                <li><img src="twitter-154_svgrepo.com.png" alt="Twitter"></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <p>Institucional</p>
+            <ul>
+                <li>Sobre o PetDot</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <p>Como Ajudar?</p>
+            <ul>
+                <li>Quero Adotar</li>
+                <li>Quero Doar</li>
+                <li>ONGs/Protetores</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

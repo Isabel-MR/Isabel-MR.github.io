@@ -1,0 +1,13 @@
+
+
+body {
+    background-color: #065e72;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+h1{
+    color: aqua;
+}

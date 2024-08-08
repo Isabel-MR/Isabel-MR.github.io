@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    background-color: #065e72;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Lobster Two', 'sans-serif';
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 3px;
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: bisque;
+    text-decoration: underline;
+}
+hr {
+    height: 3px;
+    width: 40%;
+    background: white;
+    margin: 10px auto;
+}
+
+fieldset {
+    font-family: 'Imprima', sans-serif;
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 6px auto;
+    width: 50%;
+    padding: 10px;
+}
+
+p {
+    font-family: 'Imprima', sans-serif;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.botao-container {
+    display: inline;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #044655;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    border: none;
+    margin-top: 100px;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-section.logo img {
+    width: 100px;
+}
+
+.footer-section p {
+    margin: 0;
+    font-weight: bold;
+    color: #e2c19f;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-section ul.social-media li {
+    margin: 0 10px;
+}
+
+.footer-section ul.social-media li img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    hr {
+        width: 60%;
+    }
+    
+    fieldset {
+        width: 70%;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    hr {
+        width: 80%;
+    }
+    
+    fieldset {
+        width: 90%;
+        font-size: 15px;
+    }
+    
+    .footer-section.logo img {
+        width: 80px;
+    }
+    
+    .footer-section ul.social-media li img {
+        width: 20px;
+        height: 20px;
+    }
+}
